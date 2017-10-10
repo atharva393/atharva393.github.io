@@ -23,20 +23,23 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Bioinformatics Fall 2017</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#abstract">Abstract</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#plan">Plan</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#reading">Litrature Survey</a>
             </li>
           </ul>
         </div>
@@ -45,50 +48,91 @@
 
     <header class="bg-primary text-white">
       <div class="container text-center">
-        <h1>Welcome to Scrolling Nav</h1>
-        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+        <h1>Computes the geodesic distance between phylogenetic trees</h1>
+        <!--<p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>-->
       </div>
     </header>
 
-    <section id="about">
+    <section id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About this page</h2>
+            <h2>Team Members</h2>
             <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
             <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+              <li>Aneesh Khandekar - 50141071</li>
+              <li>Atharva Borkar   - 05331108</li>
+              <li>Rahul Prasad     - 83597108</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="bg-light">
+    <section id="abstract" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Services we offer</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+            <h2>Abstract</h2>
+            <p class="lead">Comparing and computing distances between phylogenetic trees are important biological problems, especially for models where edge lengths play an important role. A space modeling the set of all phylogenetic trees having a fixed set of leaves is considered. This space provides a way of measuring distance between phylogenetic trees. It also provides a justification for disregarding portions of a collection of trees that agree, thereby, simplifying the space in which comparisons are to be made. 
+The geodesic distance measure between two phylogenetic trees with edge lengths is the length of the shortest path between them in this continuous tree space. We aim to understand and implement different algorithms that provide a way to compute geodesic distances in tree space. Specifically, we would be looking at three different algorithms including the GTP algorithm, GeodeMaps and GeoMe Tree.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="plan">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <h2>Plan of Action</h2>
+            <p class="lead">The motivation behind this project is to compute the shortest path between phylogenetic trees in
+				Euclidean tree space. We plan to do a comparative study of different algorithms which help
+				calculate this shortest distance after which the results are recorded to give us an idea about the
+				efficiency of each one of them
+			</p>
+			<h3>Algorithms</h3>
+			<p class="lead">
+			1. GTP <br>
+			2. GeodeMap <br>
+			3. GeotMeTree <br>
+			</p>
+			<p class="lead"></p>
+			<h3>Dataset Used</h3>
+			<p class="lead">The dataset being used for the implementation is TreeBASE. It is a repository containing all
+				phylogenetic information, phylogenetic trees and the data needed to generate them.
+			</p>
+			<h3>Objective</h3>
+			<p class="lead">Java and Python implementation followed by a time comparison of the result of each algorithm.</p>
+			<h3>Work Distribution</h3>
+			<p class="lead">Since three algorithms are being tested, the workload will be equally split among all the project
+			members. The tasks that will be undertaken for each algorithm include<br>
+			1. Understanding the working of the algorithm<br>
+			2. Testing and evaluation of data during algorithmic implementation.<br>
+			3. Comparing the results of one algorithm with the result of others.<br></p>
           </div>
         </div>
       </div>
     </section>
 
+	<section id="reading">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Litrature Survey</h2>
+			<p class="lead">M. Owen and J.S. Provan. A fast algorithm for computing geodesic distances in tree space. IEEE/ACM Transactions on Computational Biology and Bioinformatics, 8:2-13, 2011.</p>
+			<p class="lead">M. Owen. Computing geodesic distances in tree space. SIAM Journal on Discrete Mathematics, 25:1506-1529, 2011. </p>
+            <p class="lead">Louis J. Billera, Susan P. Holmes and Karen Vogtmann, Geometry of the Space of Phylogenetic Trees, Advances in Applied Mathematics Vol 27 Issue 4, Nov 2001 733-767</p>
+			<p class="lead">Feng Shi, Qilong Feng, Jianer Chen, Lusheng Wang, and Jianxin Wang, Distances Between Phylogenetic Trees: A Survey, TSINGHUA SCIENCE AND TECHNOLOGY, ISSNll1007-0214ll07/11llpp490-499
+				Volume 18, Number 5, October 2013
+			</p>
+			<p class="lead">Anne Kupczok, Arndt Von Haeseler, and Steffen Klaere. Journal of Computational Biology. July 2008, 15(6): 577-591</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+	
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
